@@ -4,13 +4,46 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #0f172a;
-    color: white;
-    padding: 40px;
-    text-align: center;
+/* HEADER */
+
+.header {
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-section {
-    padding: 40px;
+/* NAVBAR */
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 300px;
+}
+
+/* NAVIGATION */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
 }
