@@ -2,29 +2,259 @@
 <html lang="fr">
 
 <head>
+
+    <!-- ======================================== -->
+    <!-- META DONNÉES IMPORTANTES POUR LE SEO -->
+    <!-- ======================================== -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Saad Benallal</title>
 
+    <!-- Titre affiché dans l'onglet du navigateur -->
+    <title>Portfolio | Saad Benallal - Développeur Web</title>
+
+    <!-- Description SEO du site -->
+    <meta name="description"
+        content="Portfolio de Saad Benallal, développeur web junior orienté front-end. Découvrez mes projets et mes compétences en développement web.">
+
+    <!-- Feuille de style principale -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
+    <!-- ======================================== -->
+    <!-- HEADER / NAVIGATION PRINCIPALE -->
+    <!-- ======================================== -->
+
     <header>
-        <h1>Saad Benallal</h1>
-        <p>Développeur web junior orienté front-end</p>
+
+        <nav class="navbar">
+
+            <!-- Logo / Nom -->
+            <h1 class="logo">Saad Benallal</h1>
+
+            <!-- Menu de navigation -->
+            <!-- Les liens permettent de naviguer dans les sections de la page -->
+            <ul class="nav-links">
+
+                <li><a href="#about">À propos</a></li>
+
+                <li><a href="#skills">Compétences</a></li>
+
+                <li><a href="#projects">Projets</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
     </header>
+
+
+
+    <!-- ======================================== -->
+    <!-- CONTENU PRINCIPAL DU SITE -->
+    <!-- ======================================== -->
 
     <main>
 
-        <section>
-            <h2>Bienvenue sur mon portfolio</h2>
-            <p>Ce site présente mes projets et mes compétences en développement web.</p>
+        <!-- ======================================== -->
+        <!-- HERO SECTION (Présentation principale) -->
+        <!-- ======================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <!-- Titre principal -->
+                <h2>Développeur web junior orienté front-end</h2>
+
+                <!-- Courte description -->
+                <p>
+                    Je conçois des interfaces web modernes, responsives et accessibles,
+                    avec une attention particulière portée à l'expérience utilisateur
+                    et à la qualité du code.
+                </p>
+
+                <!-- Bouton vers les projets -->
+                <a href="#projects" class="btn-primary">
+                    Voir mes projets
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- SECTION À PROPOS -->
+        <!-- ======================================== -->
+
+        <section id="about" class="about">
+
+            <h2>À propos</h2>
+
+            <p>
+                Je m'appelle Saad Benallal, développeur web junior passionné par les technologies du web.
+                Après une première expérience dans le domaine technique en tant que technicien fibre optique,
+                j'ai choisi de me reconvertir dans le développement web afin de transformer ma passion pour
+                la création de sites et d'applications en métier.
+            </p>
+
+            <p>
+                J'ai suivi une formation diplômante chez OpenClassrooms, où j'ai pu travailler sur plusieurs
+                projets concrets allant de l'intégration web avec HTML et CSS jusqu'au développement
+                d'applications front-end avec React et la création d'API avec Node.js.
+            </p>
+
+        </section>
+
+
+
+        <!-- ======================================== -->
+        <!-- SECTION COMPÉTENCES -->
+        <!-- ======================================== -->
+
+        <section id="skills" class="skills">
+
+            <h2>Compétences</h2>
+
+            <div class="skills-container">
+
+                <!-- Front-end -->
+                <div class="skill-category">
+
+                    <h3>Front-end</h3>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Back-end -->
+                <div class="skill-category">
+
+                    <h3>Back-end</h3>
+
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>API REST</li>
+                        <li>MongoDB</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Outils -->
+                <div class="skill-category">
+
+                    <h3>Outils</h3>
+
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                        <li>Chrome DevTools</li>
+                        <li>Lighthouse</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION PROJETS -->
+        <!-- ======================================== -->
+
+        <section id="projects" class="projects">
+
+            <h2>Mes projets</h2>
+
+            <div class="projects-container">
+
+                <!-- Projet 1 -->
+                <article class="project-card">
+
+                    <h3>Booki</h3>
+
+                    <p>
+                        Intégration d'une interface web à partir d'une maquette Figma en HTML et CSS.
+                        Le projet inclut un design responsive et une structure de code claire.
+                    </p>
+
+                    <a href="#">Voir le projet</a>
+
+                </article>
+
+
+                <!-- Projet 2 -->
+                <article class="project-card">
+
+                    <h3>Kasa</h3>
+
+                    <p>
+                        Développement d'une application web avec React permettant d'afficher
+                        des logements et leurs détails à partir de données JSON.
+                    </p>
+
+                    <a href="#">Voir le projet</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================== -->
+        <!-- SECTION CONTACT -->
+        <!-- ======================================== -->
+
+        <section id="contact" class="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                Vous souhaitez discuter d'un projet ou d'une opportunité ?
+                N'hésitez pas à me contacter.
+            </p>
+
+            <a href="https://www.linkedin.com" target="_blank">
+                Mon LinkedIn
+            </a>
+
         </section>
 
     </main>
 
+    <!-- ======================================== -->
+    <!-- FOOTER -->
+    <!-- ======================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 - Saad Benallal - Portfolio Développeur Web
+        </p>
+
+    </footer>
+
+
+
+    <!-- Script JS -->
     <script src="js/script.js"></script>
 
 </body>
