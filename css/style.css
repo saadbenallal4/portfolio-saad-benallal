@@ -154,3 +154,65 @@ body {
 .skill p {
     font-weight: 500;
 }
+
+/* ========================= */
+/* SECTION PROJETS */
+/* ========================= */
+
+.projects {
+    padding: 80px 0;
+}
+
+.projects h2 {
+    margin-bottom: 50px;
+}
+
+/* BLOC PROJET */
+
+.project {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.project h3 {
+    margin-bottom: 30px;
+}
+
+/* MOCKUP */
+
+.project-mockup img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* BARRE INFO */
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* BOUTON GITHUB */
+
+.github-link {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px 16px;
+}
+
+/* TECHNOLOGIES */
+
+.project-tech {
+    display: flex;
+    gap: 10px;
+}
+
+.project-tech img {
+    width: 28px;
+    height: 28px;
+}
