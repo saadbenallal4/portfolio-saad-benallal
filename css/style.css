@@ -47,3 +47,56 @@ body {
 .nav-links a:hover {
     color: #3b82f6;
 }
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px;
+}
+
+/* HERO */
+
+.hero {
+    background: white;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOUTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: black;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    border: 1px solid black;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: black;
+}
