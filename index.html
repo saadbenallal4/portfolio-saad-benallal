@@ -9,6 +9,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Titre affiché dans l'onglet du navigateur -->
     <title>Portfolio | Saad Benallal - Développeur Web</title>
@@ -25,33 +30,46 @@
 
 <body>
 
-    <!-- ======================================== -->
-    <!-- HEADER / NAVIGATION PRINCIPALE -->
-    <!-- ======================================== -->
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
 
-    <header class="header">
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#top" class="logo" aria-label="Retour en haut du site">
+                <img src="assets/images/logo-sb.png" alt="Logo SB Dev">
+            </a>
 
-        <nav class="navbar">
-
-            <!-- Logo -->
-            <div class="logo">
-                <img src="assets/images/logo-sb.png" alt="Logo SB - Portfolio Saad Benallal">
-            </div>
-
-            <!-- Navigation -->
-            <ul class="nav-links">
-
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
+            <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="side-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        </div>
     </header>
 
+    <!-- ========================= -->
+    <!-- MENU LATÉRAL -->
+    <!-- ========================= -->
+
+    <aside class="side-menu" id="side-menu" aria-hidden="true">
+        <button class="menu-close" type="button" aria-label="Fermer le menu">
+            ×
+        </button>
+
+        <nav class="side-nav" aria-label="Navigation principale">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/saadbenallal4" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+    </aside>
+
+    <div class="menu-overlay"></div>
 
 
     <!-- ======================================== -->
@@ -64,32 +82,43 @@
         <!-- HERO SECTION (Présentation principale) -->
         <!-- ======================================== -->
 
-        <section class="hero">
+        <section class="hero" id="top">
+            <div class="container hero-layout">
+                <div class="hero-left">
+                    <div class="hero-accent"></div>
 
-            <div class="container hero-content">
+                    <div class="hero-content">
+                        <h1>
+                            Saad<br>
+                            Benallal
+                        </h1>
 
-                <h1>Saad Benallal</h1>
+                        <h2>Développeur Front-end.</h2>
 
-                <h2>Développeur web front-end.</h2>
+                        <p>
+                            Développeur web junior passionné par les technologies du web,
+                            je conçois des interfaces modernes, accessibles et responsives
+                            avec une attention particulière portée à l'expérience utilisateur.
+                        </p>
 
-                <p>
-                    Développeur web junior passionné par les technologies du web,
-                    je conçois des interfaces modernes, accessibles et responsives
-                    avec une attention particulière portée à l’expérience utilisateur.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#contact" class="btn-primary">Me contacter</a>
-
-                    <a href="https://github.com/saadbenallal4" class="btn-secondary" target="_blank">
-                        GitHub
-                    </a>
-
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Me contacter</a>
+                            <a href="https://github.com/saadbenallal4" class="btn btn-secondary" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="hero-right">
+                    <div class="orbit-visual" aria-hidden="true">
+                        <div class="planet"></div>
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                    </div>
+                </div>
             </div>
-
         </section>
 
         <!-- ======================================== -->
@@ -354,6 +383,7 @@
 
         </footer>
 
+        <script src="js/script.js"></script>
 </body>
 
 </html>
