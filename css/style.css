@@ -75,7 +75,6 @@ a {
     gap: 16px;
 }
 
-
 .menu-toggle {
     width: 48px;
     height: 48px;
@@ -246,8 +245,9 @@ a {
     align-items: center;
     justify-content: center;
     min-width: 170px;
+    height: 58px;
     padding: 16px 24px;
-    border-radius: 0;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
@@ -255,23 +255,37 @@ a {
     border: 1px solid #111111;
 }
 
+.btn-github img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.btn-github:hover img {
+    filter: brightness(0) invert(1);
+}
+
 .btn-primary {
-    background: #111111;
+    background: #0a1f44;
     color: #ffffff;
 }
 
 .btn-primary:hover {
-    background: var(--color-primary);
-    border-color: var(--color-primary);
+    background: #081733;
+    border-color: #081733;
 }
 
 .btn-secondary {
-    background: transparent;
+    background: #ffffff;
     color: #111111;
 }
 
 .btn-secondary:hover {
-    background: #111111;
+    background: #0a1f44;
+    border-color: #0a1f44;
+    ;
     color: #ffffff;
 }
 
@@ -325,4 +339,102 @@ a {
     height: 170px;
     transform: translate(-50%, -50%) rotate(24deg);
     opacity: 0.45;
+}
+
+/* ================================= */
+/* SECTION À PROPOS */
+/* ================================= */
+
+.about-section {
+    padding: 110px 0;
+    background: #f7f7f2;
+}
+
+.about-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 48px;
+    align-items: center;
+    background: linear-gradient(135deg, #020817 0%, #061530 45%, #01040b 100%);
+    color: #ffffff;
+    padding: 90px 80px;
+    min-height: 420px;
+}
+
+.about-visual {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.about-planet {
+    position: absolute;
+    top: 34px;
+    left: 34px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #0e2d68 0%, #071a3d 45%, #01040b 100%);
+    box-shadow: 0 0 30px rgba(10, 31, 68, 0.30);
+}
+
+.about-orbit {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+}
+
+.about-orbit-one {
+    width: 128px;
+    height: 58px;
+    top: 40px;
+    left: 6px;
+    transform: rotate(28deg);
+}
+
+.about-orbit-two {
+    width: 128px;
+    height: 58px;
+    top: 40px;
+    left: 6px;
+    transform: rotate(-28deg);
+}
+
+.about-content {
+    max-width: 620px;
+}
+
+.about-content h2 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin-bottom: 28px;
+    color: #ffffff;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 22px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ================================= */
+/* ANIMATION D’APPARITION AU SCROLL */
+/* ================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
 }

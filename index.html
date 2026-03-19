@@ -82,7 +82,7 @@
         <!-- HERO SECTION (Présentation principale) -->
         <!-- ======================================== -->
 
-        <section class="hero" id="top">
+        <section class="hero reveal" id="top">
             <div class="container hero-layout">
                 <div class="hero-left">
                     <div class="hero-accent"></div>
@@ -103,9 +103,9 @@
 
                         <div class="hero-buttons">
                             <a href="#contact" class="btn btn-primary">Me contacter</a>
-                            <a href="https://github.com/saadbenallal4" class="btn btn-secondary" target="_blank"
-                                rel="noopener noreferrer">
-                                GitHub
+                            <a href="https://github.com/saadbenallal4" class="btn btn-secondary btn-github"
+                                target="_blank" rel="noopener noreferrer" aria-label="Voir mon profil GitHub">
+                                <img src="assets/images/github.png" alt="GitHub">
                             </a>
                         </div>
                     </div>
@@ -125,23 +125,33 @@
         <!-- SECTION À PROPOS -->
         <!-- ======================================== -->
 
-        <section id="about" class="about">
+        <section id="about" class="about-section reveal">
+            <div class="container about-container">
+                <div class="about-visual" aria-hidden="true">
+                    <div class="about-planet"></div>
+                    <div class="about-orbit about-orbit-one"></div>
+                    <div class="about-orbit about-orbit-two"></div>
+                </div>
 
-            <h2>À propos</h2>
+                <div class="about-content">
+                    <h2>À propos de moi</h2>
 
-            <p>
-                Je m'appelle Saad Benallal, développeur web junior passionné par les technologies du web.
-                Après une première expérience dans le domaine technique en tant que technicien fibre optique,
-                j'ai choisi de me reconvertir dans le développement web afin de transformer ma passion pour
-                la création de sites et d'applications en métier.
-            </p>
+                    <p>
+                        Je suis passionné par le développement front-end et par la création
+                        d’interfaces modernes, claires et intuitives. J’accorde une attention
+                        particulière à l’expérience utilisateur, à l’accessibilité et à la
+                        qualité du code, car aujourd’hui chaque personne doit pouvoir naviguer
+                        sur le web de manière simple, fluide et inclusive.
+                    </p>
 
-            <p>
-                J'ai suivi une formation diplômante chez OpenClassrooms, où j'ai pu travailler sur plusieurs
-                projets concrets allant de l'intégration web avec HTML et CSS jusqu'au développement
-                d'applications front-end avec React et la création d'API avec Node.js.
-            </p>
-
+                    <p>
+                        Je développe des projets concrets qui me permettent de renforcer mes compétences en
+                        intégration, en JavaScript, en React et en conception d’interfaces
+                        responsives. Mon objectif est de concevoir des sites utiles, soignés et
+                        pensés pour de vrais utilisateurs.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- SECTION COMPÉTENCES -->
