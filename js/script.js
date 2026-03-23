@@ -60,3 +60,29 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 revealElements.forEach((element) => {
     revealObserver.observe(element);
 });
+
+/* ================================= */
+/* FILTRES DE LA SECTION COMPÉTENCES */
+/* ================================= */
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const skillCards = document.querySelectorAll(".skill-card");
+
+filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        skillCards.forEach((card) => {
+            const category = card.dataset.category;
+
+            if (filter === "all" || category === filter) {
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
