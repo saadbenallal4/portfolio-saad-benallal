@@ -611,3 +611,118 @@ a {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
+
+/* =============================== */
+/* PROJETS */
+/* =============================== */
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 40px;
+}
+
+/* CARD */
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+/* IMAGE */
+.project-image {
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* ZOOM HOVER */
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.project-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* TAGS */
+.project-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-tags span {
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* BOUTONS */
+.project-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* BOUTON GITHUB */
+.project-buttons a {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER */
+.github-btn:hover img {
+    filter: invert(1);
+}
+
+.github-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+/* STYLE BOUTON (réutilisé) */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* BOUTON OUTLINE */
+.btn-outline {
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+}
+
+/* HOVER BLEU */
+.btn-outline:hover {
+    background: #0f172a;
+    color: #fff;
+    border-color: #0f172a;
+}
