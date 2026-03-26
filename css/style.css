@@ -621,12 +621,16 @@ a {
 }
 
 .projects-grid {
-    display: grid;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 /* CARD */
 .project-card {
+    width: 100%;
+    max-width: 900px;
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -725,4 +729,47 @@ a {
     background: #0f172a;
     color: #fff;
     border-color: #0f172a;
+}
+
+/* IMAGE CONTAINER */
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* OVERLAY */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* BOUTON OVERLAY */
+.overlay-btn {
+    padding: 12px 25px;
+    background: #ffffff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* HOVER BOUTON */
+.overlay-btn:hover {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* ACTIVATION HOVER */
+.project-image:hover .project-overlay {
+    opacity: 1;
 }
