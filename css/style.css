@@ -773,3 +773,107 @@ a {
 .project-image:hover .project-overlay {
     opacity: 1;
 }
+
+/* =============================== */
+/* CONTACT */
+/* =============================== */
+
+.contact-section {
+    background: linear-gradient(135deg, #020817 0%, #061530 45%, #01040b 100%);
+    color: #ffffff;
+    padding: 100px 20px 70px;
+}
+
+.contact-container {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.section-header-light {
+    margin-bottom: 24px;
+}
+
+.section-header-light .section-line {
+    background: #ffffff;
+}
+
+.section-header-light h2 {
+    color: #ffffff;
+}
+
+.contact-email {
+    margin: 0 0 32px;
+    color: #60a5fa;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.contact-form .btn-primary {
+    align-self: center;
+    min-width: 220px;
+    margin-top: 10px;
+}
+
+/* =============================== */
+/* FOOTER */
+/* =============================== */
+
+.site-footer {
+    background: #020817;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 28px 20px 36px;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.footer-copy {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.9rem;
+}
